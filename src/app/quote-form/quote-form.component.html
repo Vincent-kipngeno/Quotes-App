@@ -1,8 +1,8 @@
 <div class="card">
-  <form class="form container" action="index.html" method="post">
+  <form (ngSubmit)= 'submitQuote()' #quoteForm = 'ngForm' class="form container" action="index.html" method="post">
     <div class="form-group">
       <label for="quote">Enter the quote: </label><br>
-      <input type="text" class="form-control" name="quote" value="" placeholder="Enter quote">
+      <input type="text" class="form-control" [(ngModel)]='newQuote.quoteValue' name="quote" #quote ="ngModel" value="" placeholder="Enter quote">
     </div>
   <div class="form-group">
     <label for="author">Author Name: </label><br>
