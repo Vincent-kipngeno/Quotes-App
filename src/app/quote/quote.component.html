@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6">
       <div *ngFor = "let quote of quotes">
-        <li>{{quote.quoteValue}}</li>
+        <h3 class="card" >{{quote.quoteValue}}</h3>
         <div *ngIf = 'quote.showQuoteDetails'>
           <app-quote-detail></app-quote-detail>
         </div>
