@@ -5,7 +5,7 @@
         <div class="card">
           <h6>{{quote.quoteValue}}</h6>
           <div *ngIf = 'quote.showQuoteDetails'>
-            <app-quote-detail></app-quote-detail>
+            <app-quote-detail [quote]='quote'></app-quote-detail>
           </div>
         </div>
         <button (click)='toggler(i)' type="button" class="btn btn-primary" name="button">Toggle Details</button>
