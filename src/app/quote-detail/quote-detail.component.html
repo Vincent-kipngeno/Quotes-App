@@ -1,4 +1,4 @@
 <div class="">
   Author name: {{quote.authorName}} posted by: {{quote.userName}} <br>
-  <button (click)='upVotes(true)' type="button" class=" btn-outline-primary">👍Upvote</button> <button (click)='downVotes(true)' type="button" class=" btn-outline-danger">👎Downvote</button>
+  <span (click)='upVotes(true)' type="button" class=" btn-outline-success">👍</span> {{quote.upVote}} upVotes <span (click)='downVotes(true)' type="button" class="btn-outline-danger">👎</span> {{quote.downVote}} downVotes
 </div>

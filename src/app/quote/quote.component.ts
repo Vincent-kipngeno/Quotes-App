@@ -16,6 +16,18 @@ export class QuoteComponent implements OnInit {
   toggler(index){
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
+
+  addUpVote(upVoting, index){
+    if (upVoting) {
+      this.quotes[index].upVote += 1;
+    }
+  }
+
+  addDownVote(downVoting, index){
+    if (downVoting) {
+      this.quotes[index].downVote += 1;
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
