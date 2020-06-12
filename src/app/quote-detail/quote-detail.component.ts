@@ -7,8 +7,8 @@ import { Quote } from '../quote'
 })
 export class QuoteDetailComponent implements OnInit {
   @Input() quote: Quote;
-  @Output() upVoting = EventEmitter<boolean>();
-  @Output() downVoting = EventEmitter<boolean>();
+  @Output() upVoting = new EventEmitter<boolean>();
+  @Output() downVoting = new EventEmitter<boolean>();
 
   upVotes(vote: boolean){
     this.upVoting.emit(vote);
