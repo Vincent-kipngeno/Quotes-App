@@ -3,6 +3,9 @@
     <div class="col-md-6">
       <div *ngFor = "let quote of quotes">
         <li>{{quote.quoteValue}}</li>
+        <div *ngIf = 'quote.showQuoteDetails'>
+          <app-quote-detail></app-quote-detail>
+        </div>
       </div>
     </div>
   </div>
