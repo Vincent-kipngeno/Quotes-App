@@ -8,10 +8,10 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote ("Be yourself; everyone else is already taken.", "Oscar Wilde", "Vincent Kipngeno", 0, 0),
-    new Quote ("Be the change that you wish to see in the world.", " Mahatma Gandhi", "Vincent Kipngeno", 0, 0),
-    new Quote ("No one can make you feel inferior without your consent.", "Eleanor Roosevelt", "Vincent Kipngeno", 0, 0),
-    new Quote ("Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi", "Vincent Kipngeno", 0, 0)
+    new Quote ("Be yourself; everyone else is already taken.", "Oscar Wilde", "Vincent Kipngeno", 0, 0, new Date(2020, 3, 12)),
+    new Quote ("Be the change that you wish to see in the world.", " Mahatma Gandhi", "Vincent Kipngeno", 0, 0, new Date(2020, 3, 12)),
+    new Quote ("No one can make you feel inferior without your consent.", "Eleanor Roosevelt", "Vincent Kipngeno", 0, 0, new Date(2020, 3, 12)),
+    new Quote ("Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi", "Vincent Kipngeno", 0, 0, new Date(2020, 3, 12))
   ]
   toggler(index){
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
