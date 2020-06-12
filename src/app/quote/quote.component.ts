@@ -13,6 +13,9 @@ export class QuoteComponent implements OnInit {
     new Quote ("No one can make you feel inferior without your consent.", "Eleanor Roosevelt", "Vincent Kipngeno", 0, 0, new Date(2020, 3, 12)),
     new Quote ("Live as if you were to die tomorrow. Learn as if you were to live forever.", "Mahatma Gandhi", "Vincent Kipngeno", 0, 0, new Date(2020, 3, 12))
   ]
+  addNewQuote(quote){
+    this.quotes.push(quote);
+  }
   toggler(index){
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
