@@ -5,6 +5,6 @@
   }
 </style>
 <div class="">
-  Author name: {{quote.authorName}} posted by: {{quote.userName}} on {{quote.date|date }}<br>
+  Author name: {{quote.authorName}} posted by: {{quote.userName}} on {{quote.date|date:'medium' |timeAgo }}<br>
   <span (click)='upVotes(true)' type="button" class=" btn-outline-success">👍</span> {{quote.upVote}} upVotes <span (click)='downVotes(true)' type="button" class="btn-outline-danger">👎</span> {{quote.downVote}} downVotes
 </div>
