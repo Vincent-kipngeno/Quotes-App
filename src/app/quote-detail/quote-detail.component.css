@@ -1,0 +1,12 @@
+hr{
+  height: 1px;
+  background-color: green;
+  border: none;
+}
+.vote{
+  color: blue;
+  size: 5px;
+}
+.button{
+  color: blue;
+}

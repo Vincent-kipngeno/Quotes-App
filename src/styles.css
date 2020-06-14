@@ -1,6 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+.card-container a{
+  margin-left: 10px;
+}
+.card-container{
+  margin-bottom: 20px;
+}
+footer{
+  background-color: blue;
+}
+.card-footer{
+  padding-top: 25px;
+  height: 30vh;
+  text-align: center;
+  background-color: blue;
+}
 .header{
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
   background: url("assets/vin.jpg") rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,6 +36,11 @@
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 20px;
+}
+.head{
+  position: absolute;
+  width: inherit;
+  bottom: 0;
 }
 .card{
   background-color: #d9d9d9;

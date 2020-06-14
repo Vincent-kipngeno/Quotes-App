@@ -5,6 +5,16 @@
   }
 </style>
 <div class="">
-  Author name: {{quote.authorName}} posted by: {{quote.userName}} on {{quote.date|date:'medium' |timeAgo }}<br>
-  <span (click)='upVotes(true)' type="button" class=" btn-outline-success">👍</span> {{quote.upVote}} upVotes <span (click)='downVotes(true)' type="button" class="btn-outline-danger">👎</span> {{quote.downVote}} downVotes
+  <hr>
+  <ul class="list">
+    <li class="list-unstyled">Author name: {{quote.authorName}}</li>
+    <li class="list-unstyled">Posted by: {{quote.userName}}</li>
+    <li class="list-unstyled">Posted: {{quote.date|date:'medium' |timeAgo }}</li>
+    <li class="list-unstyled">Upvotes: {{quote.upVote}}</li>
+    <li class="list-unstyled">Downvotes: {{quote.downVote}}</li>
+  </ul>
+    <hr>
+<div class="vote">
+    <button (click)='upVotes(true)' type="button" class="btn btn-primary btn-outline-success">👍</button>  {{quote.upVote}} upVotes   <button (click)='downVotes(true)' type="button" class="btn btn-primary btn-outline-danger">👎</button>  {{quote.downVote}} downVotes
+</div>
 </div>
