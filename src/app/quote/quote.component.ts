@@ -31,9 +31,19 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].downVote += 1;
     }
   }
+  highlightFunc(index){
+    let d: number;
+    d = this.quotes.reduce((acc, quote) => acc = acc > quote.upVote ? acc : quote.upVote, 0);
+    if (this.quotes[index].upVote === d && this.quotes[index].upVote > 0) {
+      return d;
+    } else {
+      return d;
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

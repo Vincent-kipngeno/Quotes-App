@@ -1,15 +1,38 @@
+<nav class="navbar navbar-expand-sm  navbar-dark sticky-top">
+  <a class="navbar-brand" href="index.html" style="text-align: center;">
+    <img src="images/logoz.png" style="height: 40px;"alt="">
+    <p style="font-size:10px; color: green;">Agri-hub</p>
+  </a>
 
-<div class="container">
+  <button type="button" class="navbar-toggler" data-toggle = "collapse" data-target = "#collapsibleNavbar" name="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="Customers.html">Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="farmers.html">Farmers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="extension.html">Extension Services</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="body container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="form1 col-md-6">
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
     <div class="col-md-6">
-      <div *ngFor = "let quote of quotes; let i = index">
+      <div *ngFor = "let quote of quotes; let i = index;">
         <div class="card">
           <div class="container">
-            <h6>{{quote.quoteValue}}</h6>
-            <div *ngIf = 'quote.showQuoteDetails'>
+            <h6 appHighlightDirective *ngIf = "highlightFunc(i) === quote.upVote && quote.upVote > 0 ">{{quote.quoteValue}}</h6>
+            <h6 *ngIf = "highlightFunc(i) !== quote.upVote || quote.upVote === 0 ">{{quote.quoteValue}}</h6>
+            <div  *ngIf = 'quote.showQuoteDetails'>
               <app-quote-detail [quote]='quote' (upVoting)='addUpVote($event, i)' (downVoting)='addDownVote($event, i)'></app-quote-detail>
             </div>
           </div>
