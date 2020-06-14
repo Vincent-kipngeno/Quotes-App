@@ -1,8 +1,11 @@
-<div class="card">
+<div class="card card-form">
+  <div style="text-align:center; padding-bottom: 20px; position:relative; top:10px; ">
+    <img src="../assets/quote2.png" style="height:150px; width:200px; " alt="">
+  </div>
   <form (ngSubmit)= 'submitQuote()' #quoteForm = 'ngForm' class="form container" action="index.html" method="post">
     <div class="form-group">
       <label for="quote">Enter the quote: </label><br>
-      <input type="text" class="form-control" [(ngModel)]='newQuote.quoteValue' name="quote" #quote ="ngModel" value="" placeholder="Enter quote">
+      <input type="text" placeholder="Enter quote" class="form-control" [(ngModel)]='newQuote.quoteValue' name="quote" #quote ="ngModel" value="" >
     </div>
   <div class="form-group">
     <label for="author">Author Name: </label><br>

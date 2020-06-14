@@ -1,2 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+.header{
+  background: url("assets/vin.jpg") rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  font-size: larger;
+  font-weight: bold;
+  font-family: fantasy;
+  height: 30vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 20px;
+}
+.card{
+  background-color: #d9d9d9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+  background-blend-mode: multiply;
+}
+body{
+  background-color: black;
+}
+.card-form{
+  background: url("assets/background2.jpeg") rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: larger;
+  font-weight: bold;
+  font-family: fantasy;
+  color: blue;
+}
