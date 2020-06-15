@@ -3,18 +3,18 @@
 This app outputs Quotes with their upVotes and downVotes.  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-##Author
+## Author
 
 By Vincent kipngeno
 
-##Description
+## Description
 
 This app takes in quotes from user, author name and user name. It then display the quotes together with other quotes posted by other people. It gives time passed since the quote was posted. It also gives option for upvoting and downvoting then highlights the quote with highest upvote and displays upvotes and downVotes
 
-##Live site
+## Live site
 https://vincent-kipngeno.github.io/Quotes-App/
 
-##Set Up and Requirements
+## Set Up and Requirements
 
  * Have Git configured in your laptop.
  * Fork the repo then git clone "https://github.com/Vincent-kipngeno/Quotes-App.git"
@@ -52,7 +52,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Known Bugs
 There are no Known bugs in this application bt if you come across one feel free to fork make the changes then create a pull request. Improvement and contributions to the app is highly allowed.
 
-##Contributions/ Contacts
+## Contributions/ Contacts
 Contribution on the project is allowed. If incase of any issue reach me through email: kipngenovi2001@gmail.com.
 
 ### License
