@@ -2,6 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 body,
 html {
+  overflow-x: hidden; 
   margin: 0;
   height: 100%;
 }
@@ -24,7 +25,7 @@ footer{
   position: relative;
   width: 100%;
   background-attachment: fixed;
-  background: url("assets/vin.jpg") rgba(0, 0, 0, 0.5);
+  background: url("assets/img/vin.jpg") rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,7 +55,7 @@ body{
   background-color: black;
 }
 .card-form{
-  background: url("assets/background2.jpeg") rgba(0, 0, 0, 0.5);
+  background: url("assets/img/background2.jpeg") rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
